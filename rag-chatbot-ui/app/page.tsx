@@ -33,14 +33,13 @@ export default function HomePage() {
   return (
     <main className="flex flex-col items-center justify-center min-h-screen p-4 bg-gray-50">
       <div className="w-full max-w-2xl space-y-4">
-        <h1 className="text-3xl font-bold text-center">🎓 MMI RAG Chatbot</h1>
-
+        <h1 className="text-3xl font-bold text-center text-black">🎓 MMI RAG Chatbot</h1>
         <textarea
           value={question}
           onChange={(e) => setQuestion(e.target.value)}
           placeholder="Stelle eine Frage zum Modulhandbuch..."
           rows={4}
-          className="w-full p-3 border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
+          className="w-full p-3 border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 text-black"
         />
 
         <button
@@ -54,7 +53,7 @@ export default function HomePage() {
         {answer && (
           <div className="p-4 mt-4 bg-white border rounded shadow">
             <h2 className="mb-2 text-lg font-semibold">Antwort:</h2>
-            <p className="whitespace-pre-wrap">{answer}</p>
+            <p className="whitespace-pre-wrap text-black">{answer}</p>
           </div>
         )}
       </div>
